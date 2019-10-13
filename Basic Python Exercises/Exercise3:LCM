@@ -1,0 +1,18 @@
+num1 = input("enter the num")
+num2 = input("enter the num")
+
+li = [ 2, 3, 5, 7, 11 ]
+
+if (num1 > num2):
+    greater = num1
+else:
+    greater = num2
+
+lcm = 0
+
+while True:
+    for x in li:
+        if (greater % x == 0):
+            lcm = greater
+            break
+print("the lcm is:"+ lcm)
