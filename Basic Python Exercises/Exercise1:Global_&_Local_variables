@@ -1,0 +1,12 @@
+f = 101
+print(f)
+
+
+def global_function():
+    global f
+    print(f)
+    f = "changing global variable"
+    global_function()
+
+
+print(f)
