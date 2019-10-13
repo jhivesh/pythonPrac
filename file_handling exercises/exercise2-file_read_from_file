@@ -1,0 +1,16 @@
+
+name = input("enter name:")
+
+#######################################
+
+name_file = open("es.txt", "a")
+name_file.write(name)
+
+name_file.close()
+
+#######################################
+
+name_file = open("es.txt", "r")
+
+# how to display name from file
+print(name_file.readlines())
