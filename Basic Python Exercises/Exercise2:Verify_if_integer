@@ -1,0 +1,8 @@
+# Verfiy if A is integer  ~#
+
+a = 2.0
+print(a,"is the type integer ?",isinstance(a,int))
+
+a = 3.142
+print(a,"is the type float?",isinstance(a,float))
+
