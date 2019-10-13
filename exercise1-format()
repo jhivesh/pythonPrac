@@ -1,0 +1,20 @@
+age = input("enter your age:")
+name = input("enter yor name")
+salary = input("enter your salary ")
+
+year_born = int(input("enter the year you was born"))
+year_current = 2019
+###############################################################################################
+
+print(name,"was",age,"years old and the salary is",salary)
+print("{0} was {1} years old and the salary is {2}".format(name,age,salary))
+
+###############################################################################################
+
+print("You are born in", year_born,".")
+print("In the year", year_current, "you will be", (year_current - year_born), "years old.")
+
+print("{0} was {1} years old and the salary is {2}".format(name,age,salary))
+
+###############################################################################################
+
