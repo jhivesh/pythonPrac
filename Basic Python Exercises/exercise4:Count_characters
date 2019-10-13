@@ -1,0 +1,30 @@
+
+lower=0
+upper=0
+digit=0
+special = 0
+
+sentence = input("enter a sentence")
+
+#######################################################################
+
+for char in sentence:
+    if char.isalnum() == True:
+        if char.islower() == True:
+            lower = int(lower) + 1
+
+        if char.isupper() == True:
+            upper = int(upper) + 1
+
+        if char.isdigit() == True:
+            digit = int(digit) + 1
+
+        if (char.islower() == False)AND(char.isupper() == False)AND(char.isdigit() == False):
+            special = special +1
+
+########################################################################
+
+print("the no of lowercase letter is :", lower)
+print("the no of uppercase letter is :", upper)
+print("the no of digit  is :", digit)
+print("the no of special character is :", special)
