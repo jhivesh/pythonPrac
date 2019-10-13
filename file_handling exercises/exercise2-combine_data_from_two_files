@@ -1,0 +1,19 @@
+# Write a Python program to combine each line from first file 
+with the corresponding line in second file.
+
+f1 = open("as.txt", "r")
+f2 = open("ac.txt", "r")
+
+p_r = f1.readlines()
+p_a = f1.readlines()
+
+for x in p_r:
+    for y in p_a:
+        f3 = open("compile.txt", "w")
+        f3 = f3.write(x + y)
+        f3.close()
+
+r1 = f3.readlines()
+print(r1)
+f1.close()
+f2.close()
