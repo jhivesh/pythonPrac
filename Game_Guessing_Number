@@ -1,0 +1,43 @@
+from random import randint 
+
+def validate(a):
+    count = 0
+    count+=1
+    a = int(input("enter a number :- "))
+    return a
+
+#validate number entered
+def val(a):
+    a = int(input("enter a number :- "))
+    return a
+
+a = int(input("enter a number :- "))
+b = randint(1,11)
+print(b)
+li = [ ]
+
+while a < 1 or a > 10:
+    print("OUT OF BOUNDS")
+    a = val(a)
+
+
+diff = a - b 
+if diff > 10:
+    print("COLD")
+else: 
+    print("WARM")
+
+
+while True:
+    a = validate(a)
+    if a != b:
+        li.append(a)
+    else:
+        print("Here is the number of guess you made",len(li))
+        print("Winner")
+        break
+
+    if  li[-1] > a:
+        print("Colder")
+    else:
+        print("Warmer")
